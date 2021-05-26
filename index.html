@@ -17,23 +17,24 @@
 <button onclick="getLocation()">Try It</button>
 
 <p id="demo"></p>
-
 <script>
-var x = document.getElementById("demo");
+    var x = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
+  } else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
 }
 </script>
 
 </body>
+
+<link rel="stylesheet" href="./js/main.css">
 </html>
