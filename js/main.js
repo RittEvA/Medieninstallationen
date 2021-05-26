@@ -3,9 +3,9 @@ var Medieninstallationen;
     document.getElementById("test").addEventListener("click", getLocation);
     var x = document.getElementById("demo");
     function getLocation() {
+        alert("so weit");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
-            alert("so weit");
         }
         else {
             x.innerHTML = "Geolocation is not supported by this browser.";
