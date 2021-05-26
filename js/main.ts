@@ -1,5 +1,5 @@
 namespace Medieninstallationen {
-    document.getElementById("back").addEventListener("click", getLocation);
+    document.getElementById("test").addEventListener("click", getLocation);
     var x = document.getElementById("demo");
 
     function getLocation() {
