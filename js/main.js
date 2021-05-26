@@ -1,9 +1,13 @@
 var Medieninstallationen;
 (function (Medieninstallationen) {
-    document.getElementById("test").addEventListener("click", getLocation);
+    document.getElementById("start").addEventListener("click", start);
+    document.getElementById("stop").addEventListener("click", stop);
     var x = document.getElementById("demo");
+    function start() {
+        alert("hier bin ich");
+        setInterval(getLocation, 100);
+    }
     function getLocation() {
-        alert("so weit");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         }
@@ -13,7 +17,10 @@ var Medieninstallationen;
     }
     function showPosition(position) {
         x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
+            "<br>Longitude: " + position.coords.longitude + "try";
+    }
+    function stop() {
+        clearInterval();
     }
 })(Medieninstallationen || (Medieninstallationen = {}));
 //# sourceMappingURL=main.js.map
