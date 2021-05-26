@@ -5,6 +5,7 @@ namespace Medieninstallationen {
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
+            alert("so weit");
         } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
