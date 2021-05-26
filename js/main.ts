@@ -18,7 +18,7 @@ namespace Medieninstallationen {
 
     function showPosition(position:any) {
         x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude+ "try";
+            "<br>Longitude: " + position.coords.longitude;
     }
     function stop(){
         clearInterval();
