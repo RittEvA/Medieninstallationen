@@ -24,7 +24,7 @@ namespace Medieninstallationen {
           x.innerHTML = "Geolocation is not supported by this browser.";
         }
       }
-
+//test 
     /*function showPosition(position:any) {// schreibt die Koordinaten ins HTML
         x.innerHTML = "Latitude: " + position.coords.latitude +
             "<br>Longitude: " + position.coords.longitude;
