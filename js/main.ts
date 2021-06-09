@@ -11,7 +11,7 @@ namespace Medieninstallationen {
     function getLocation() {//ständige Überprüfung der GPS-Koordinaten
       if (navigator.geolocation) {
         navigator.geolocation.watchPosition(showPosition);
-       // navigator.geolocation.watchPosition(forStory);
+        navigator.geolocation.watchPosition(forStory);
       } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
       }
@@ -43,7 +43,7 @@ function start(){
   let audio_background = new Audio(Wanderweg.Kuenstler[0].audio);
       audio_background.play();
 }
-/*function forStory(position:any){
+function forStory(position:any){
   for(let i:number; i< Wanderweg.Kuenstler.length; i++){
     if (Wanderweg.Kuenstler[i].K1 == position.coords.latitude && Wanderweg.Kuenstler[i].K2 == position.coords.longitude){//soll einen Bereich um die aktuelle Koordinate vergleichen
       let audio_background = new Audio(Wanderweg.Kuenstler[i].audio);
@@ -53,7 +53,7 @@ function start(){
    
   }
   //Wanderweg.gram[0].text;
-}*/
+}
 }
 
 
