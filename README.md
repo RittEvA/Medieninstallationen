@@ -18,6 +18,8 @@ Entweder ein schlichter gemütlicher Raum mit einem Blankobuch. Mit dem Buch kan
 
 Oder der Betrachter ist nicht an einen Raum gebunden sonder darf frei einem Weg folgen. Während er über den Weg wandert wird im die Geschichte erzählt. Sobald eine physische Kreuzung erreicht wird, wird auch in der Geschichte eine Entscheidung notwendig. Je nach wahl des Weges wird die Geschichte einen anderen Verlauf nehmen so wie der Betrachter eine andere Route läuft.
 
+Zwischenzeitlich stand die Überlegung im Raum auf das linke Ohr die eine Entscheidung ab zu spielen un
+
 Inhaltlich könnte der Lebensweg einer Künstlerin beschritten werden oder aber auch ein historisches Geschehnis in der Umgebung. 
 
 ## Feinkonzept
@@ -27,3 +29,6 @@ Wo genau findet das Ganze statt? Man könnte an historischen Orten auch historis
 Mit meinem Prototypen soll der physische Weg für die Geschichte nicht so große Bedeutung haben, da der Lebensweg einer Künstlerin erzählt werden soll. 
 
 Hinweis: durch andere Entscheidungen kann möglicherweise der Lebensverlauf der Person stark vom eigentlichen Verlauf abweichen.
+
+## Entscheidungen:
+- 

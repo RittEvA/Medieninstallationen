@@ -45,10 +45,15 @@ function start(){
 }
 function forStory(position:any){
   for(let i:number; i< Wanderweg.Kuenstler.length; i++){
-    if (Wanderweg.Kuenstler[i].K1 == position.coords.latitude && Wanderweg.Kuenstler[i].K2 == position.coords.longitude){//soll einen Bereich um die aktuelle Koordinate vergleichen
-      let audio_background = new Audio(Wanderweg.Kuenstler[i].audio);
-      audio_background.play();
-      kontrolle=1;
+    if (Wanderweg.Kuenstler[i].K1 < position.coords.latitude-20 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+20){//soll einen Bereich um die aktuelle Koordinate vergleichen
+      alert(Wanderweg.Kuenstler[i].K1 < position.coords.latitude-20 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+20);
+      if(Wanderweg.Kuenstler[i].K2< position.coords.longitude-20 && Wanderweg.Kuenstler[i].K2 > position.coords.longitude+20){
+        let audio_background = new Audio(Wanderweg.Kuenstler[i].audio);
+        audio_background.play();
+        kontrolle=1;
+      }
+      
+      
     }
    
   }
