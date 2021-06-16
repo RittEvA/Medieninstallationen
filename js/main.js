@@ -40,10 +40,11 @@ var Medieninstallationen;
         audio_background.play();
     }
     function forStory(position) {
+        alert("hey");
         for (let i; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
-            if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 20 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 20) { //soll einen Bereich um die aktuelle Koordinate vergleichen
-                alert(Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 20 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 20);
-                if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude - 20 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude + 20) {
+            if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
+                alert(Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200);
+                if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude + 200) {
                     let audio_background = new Audio(Medieninstallationen.Wanderweg.Kuenstler[i].audio);
                     audio_background.play();
                     kontrolle = 1;

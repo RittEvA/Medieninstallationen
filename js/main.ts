@@ -44,10 +44,11 @@ function start(){
       audio_background.play();
 }
 function forStory(position:any){
+  alert("hey");
   for(let i:number; i< Wanderweg.Kuenstler.length; i++){
-    if (Wanderweg.Kuenstler[i].K1 < position.coords.latitude-20 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+20){//soll einen Bereich um die aktuelle Koordinate vergleichen
-      alert(Wanderweg.Kuenstler[i].K1 < position.coords.latitude-20 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+20);
-      if(Wanderweg.Kuenstler[i].K2< position.coords.longitude-20 && Wanderweg.Kuenstler[i].K2 > position.coords.longitude+20){
+    if (Wanderweg.Kuenstler[i].K1 < position.coords.latitude-200 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+200){//soll einen Bereich um die aktuelle Koordinate vergleichen
+      alert(Wanderweg.Kuenstler[i].K1 < position.coords.latitude-200 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+200);
+      if(Wanderweg.Kuenstler[i].K2< position.coords.longitude-200 && Wanderweg.Kuenstler[i].K2 > position.coords.longitude+200){
         let audio_background = new Audio(Wanderweg.Kuenstler[i].audio);
         audio_background.play();
         kontrolle=1;
