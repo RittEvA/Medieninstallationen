@@ -1,6 +1,6 @@
 var Medieninstallationen;
 (function (Medieninstallationen) {
-    //document.getElementById("start").addEventListener("click", start);
+    document.getElementById("start").addEventListener("click", start);
     // document.getElementById("stop").addEventListener("click", stop);
     navigator.geolocation.getCurrentPosition(getLocation, showError); //Für Positionsabfrage
     navigator.geolocation.watchPosition(getLocation, showError); //Für Verfolgung
@@ -9,7 +9,6 @@ var Medieninstallationen;
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.watchPosition(showPosition);
-            document.getElementById("start").addEventListener("click", start);
             //navigator.geolocation.watchPosition(forStory);
         }
         else {
@@ -41,7 +40,7 @@ var Medieninstallationen;
           audio_background.play();
     }*/
     function start(position) {
-        alert("hey");
+        alert("hey ich bin gecklickt");
         for (let i; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
                 alert(Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200);
