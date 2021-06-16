@@ -11,7 +11,7 @@ namespace Medieninstallationen {
 
     export let Wanderweg: KonstruktionsWege = {
         "Kuenstler":[
-        {K1:48.0479353, K2:8.1867021, audio:"./Audio/anfang.mp3"}
+        {K1:48.0478775, K2:8.1867209, audio:"./Audio/anfang.mp3"}
         ]
     }
 }
