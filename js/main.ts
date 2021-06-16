@@ -1,6 +1,6 @@
 namespace Medieninstallationen {
    
-    document.getElementById("start").addEventListener("click", start);
+    //document.getElementById("start").addEventListener("click", start);
    // document.getElementById("stop").addEventListener("click", stop);
     navigator.geolocation.getCurrentPosition(getLocation, showError); //Für Positionsabfrage
     navigator.geolocation.watchPosition(getLocation, showError);  //Für Verfolgung
@@ -11,7 +11,8 @@ namespace Medieninstallationen {
     function getLocation() {//ständige Überprüfung der GPS-Koordinaten
       if (navigator.geolocation) {
         navigator.geolocation.watchPosition(showPosition);
-        navigator.geolocation.watchPosition(forStory);
+        document.getElementById("start").addEventListener("click", start);
+        //navigator.geolocation.watchPosition(forStory);
       } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
       }
@@ -39,11 +40,11 @@ function showError(error:any) {//Wenn es probleme Gibt soll er es dem Nutzer mit
             break;
     }
 }
-function start(){
+/*function start(){
   let audio_background = new Audio(Wanderweg.Kuenstler[0].audio);
       audio_background.play();
-}
-function forStory(position:any){
+}*/
+function start(position:any){
   alert("hey");
   for(let i:number; i< Wanderweg.Kuenstler.length; i++){
     if (Wanderweg.Kuenstler[i].K1 < position.coords.latitude-200 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+200){//soll einen Bereich um die aktuelle Koordinate vergleichen
