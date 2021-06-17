@@ -6,7 +6,7 @@ namespace Medieninstallationen {
     navigator.geolocation.watchPosition(getLocation, showError);  //Für Verfolgung
 
     let x = document.getElementById("demo");
-    let kontrolle:number;
+    let kontrolle:number=0;
    
     function getLocation() {//ständige Überprüfung der GPS-Koordinaten
       if (navigator.geolocation) {
@@ -44,14 +44,14 @@ function showError(error:any) {//Wenn es probleme Gibt soll er es dem Nutzer mit
       audio_background.play();
 }*/
 function forStory(position:any){
-  for(let i:number=0; i < 2; i++){//Wanderweg.Kuenstler.length
+  for(let i:number = 0; i < Wanderweg.Kuenstler.length; i++){
     if (Wanderweg.Kuenstler[i].K1 > position.coords.latitude-200 && Wanderweg.Kuenstler[i].K1 < position.coords.latitude+200){//soll einen Bereich um die aktuelle Koordinate vergleichen
       //alert("die Latitude hürde genommen");
       if(Wanderweg.Kuenstler[i].K2 > position.coords.longitude-200 && Wanderweg.Kuenstler[i].K2 < position.coords.longitude+200){
-        if(kontrolle==0){
+        if(Wanderweg.Kuenstler[i].kontrolle==0){
           let audio_background = new Audio(Wanderweg.Kuenstler[i].audio);
-        audio_background.play();
-        kontrolle=1;
+          audio_background.play();
+          Wanderweg.Kuenstler[i].kontrolle=1;
         }
         else{
           break;

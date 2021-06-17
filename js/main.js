@@ -5,7 +5,7 @@ var Medieninstallationen;
     navigator.geolocation.getCurrentPosition(getLocation, showError); //Für Positionsabfrage
     navigator.geolocation.watchPosition(getLocation, showError); //Für Verfolgung
     let x = document.getElementById("demo");
-    let kontrolle;
+    let kontrolle = 0;
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.watchPosition(showPosition);
@@ -40,14 +40,14 @@ var Medieninstallationen;
           audio_background.play();
     }*/
     function forStory(position) {
-        for (let i = 0; i < 2; i++) { //Wanderweg.Kuenstler.length
+        for (let i = 0; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
                 //alert("die Latitude hürde genommen");
                 if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude + 200) {
-                    if (kontrolle == 0) {
+                    if (Medieninstallationen.Wanderweg.Kuenstler[i].kontrolle == 0) {
                         let audio_background = new Audio(Medieninstallationen.Wanderweg.Kuenstler[i].audio);
                         audio_background.play();
-                        kontrolle = 1;
+                        Medieninstallationen.Wanderweg.Kuenstler[i].kontrolle = 1;
                     }
                     else {
                         break;
