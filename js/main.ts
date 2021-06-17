@@ -46,6 +46,7 @@ function showError(error:any) {//Wenn es probleme Gibt soll er es dem Nutzer mit
 function forStory(position:any){
   alert("hey ich bin gecklickt");
   for(let i:number; i< Wanderweg.Kuenstler.length; i++){
+    alert("nur herein");
     if (Wanderweg.Kuenstler[i].K1 < position.coords.latitude-200 && Wanderweg.Kuenstler[i].K1 > position.coords.latitude+200){//soll einen Bereich um die aktuelle Koordinate vergleichen
       alert("die Latitude hürde genommen");
       if(Wanderweg.Kuenstler[i].K2< position.coords.longitude-200 && Wanderweg.Kuenstler[i].K2 > position.coords.longitude+200){

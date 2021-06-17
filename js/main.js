@@ -42,6 +42,7 @@ var Medieninstallationen;
     function forStory(position) {
         alert("hey ich bin gecklickt");
         for (let i; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
+            alert("nur herein");
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
                 alert("die Latitude hürde genommen");
                 if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude + 200) {
