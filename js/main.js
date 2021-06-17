@@ -9,7 +9,6 @@ var Medieninstallationen;
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.watchPosition(showPosition);
-            alert("es geht");
             navigator.geolocation.watchPosition(forStory);
         }
         else {
@@ -44,7 +43,7 @@ var Medieninstallationen;
         alert("hey ich bin gecklickt");
         for (let i; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
-                alert(Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200);
+                alert("die Latitude hürde genommen");
                 if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude + 200) {
                     let audio_background = new Audio(Medieninstallationen.Wanderweg.Kuenstler[i].audio);
                     audio_background.play();
