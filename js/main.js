@@ -42,11 +42,16 @@ var Medieninstallationen;
     function forStory(position) {
         for (let i = 0; i < 2; i++) { //Wanderweg.Kuenstler.length
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
-                alert("die Latitude hürde genommen");
-                if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude + 200) {
-                    let audio_background = new Audio(Medieninstallationen.Wanderweg.Kuenstler[i].audio);
-                    audio_background.play();
-                    kontrolle = 1;
+                //alert("die Latitude hürde genommen");
+                if (Medieninstallationen.Wanderweg.Kuenstler[i].K2 > position.coords.longitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K2 < position.coords.longitude + 200) {
+                    if (kontrolle == 0) {
+                        let audio_background = new Audio(Medieninstallationen.Wanderweg.Kuenstler[i].audio);
+                        audio_background.play();
+                        kontrolle = 1;
+                    }
+                    else {
+                        break;
+                    }
                 }
             }
         }
