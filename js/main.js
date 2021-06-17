@@ -40,7 +40,7 @@ var Medieninstallationen;
           audio_background.play();
     }*/
     function forStory(position) {
-        for (let i; i < Medieninstallationen.Wanderweg.Kuenstler.length; i++) {
+        for (let i = 0; i < 2; i++) { //Wanderweg.Kuenstler.length
             alert("nur herein");
             if (Medieninstallationen.Wanderweg.Kuenstler[i].K1 < position.coords.latitude - 200 && Medieninstallationen.Wanderweg.Kuenstler[i].K1 > position.coords.latitude + 200) { //soll einen Bereich um die aktuelle Koordinate vergleichen
                 alert("die Latitude hürde genommen");
