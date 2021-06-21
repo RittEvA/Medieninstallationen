@@ -16,14 +16,14 @@ Der Betrachter soll das wichtiste Element der Installation sein. Er soll mit Hil
 
 Entweder ein schlichter gemütlicher Raum mit einem Blankobuch. Mit dem Buch kann man wie gewohnt interagieren. Man kann es aufschlagen und darin blättern. Wenn das Buch aufgeschlagen wird soll die Geschichte über Boxen erzählt werden. An einem Entscheidungspunkt angekommen, soll der Benutzer durch das Blättern der Seite, die seine Entscheiung enthält, die Geschichte weiter verfolgen können.
 
-Oder der Betrachter ist nicht an einen Raum gebunden sonder darf frei einem Weg folgen. Während er über den Weg wandert wird im die Geschichte erzählt. Sobald eine physische Kreuzung erreicht wird, wird auch in der Geschichte eine Entscheidung notwendig. Je nach wahl des Weges wird die Geschichte einen anderen Verlauf nehmen so wie der Betrachter eine andere Route läuft.
-
-Zwischenzeitlich stand die Überlegung im Raum auf das linke Ohr die eine Entscheidung ab zu spielen un
+Oder der Betrachter ist nicht an einen Raum gebunden sonder darf frei einem Weg folgen. Während der Betrachter über den Weg wandert wird ihm die Geschichte erzählt. Sobald eine physische Kreuzung erreicht wird, wird auch in der Geschichte eine Entscheidung notwendig. Je nach Wahl des Weges wird die Geschichte einen anderen Verlauf nehmen und der Betrachter eine andere Route läuft.
 
 Inhaltlich könnte der Lebensweg einer Künstlerin beschritten werden oder aber auch ein historisches Geschehnis in der Umgebung. 
 
 ## Feinkonzept
-Um die Geschichte zu erfahren muss man sich auf den Weg machen. Man beschreitet einen Weg, während man der Erzählung lauscht. Erreicht man eine Kreuzung, erreicht man auch einen Entscheidungsknoten in der Geschichte. Abhängig von der Entscheidung läuft man rechts oder links und somit einen anderen Weg und der Verlauf der Geschichte ist auch anders.
+Die Grundgedanken des Grobkonzepts werden hier etwas detaillierter vorallem im Bezug auf die Örtlichkeit und den Inhalt. Um die Geschichte von Hannah Höch zu erfahren muss man sich auf den Weg machen. Man beschreitet die Wege im Schlosspark von Gotha, während man der Erzählung lauscht. Erreicht man eine Kreuzung, erreicht man auch einen Entscheidungsknoten im Leben von Hannah Höch. Abhängig von der Entscheidung läuft man rechts oder links und somit einen anderen Weg und die Informationen und Inhalte sind auch anders. Die Texte sind zeitlich auf die Strecken in Gotha und einer Schrittgeschwindigkeit von etwa 5 km/h ausgelegt, daher kann es im Prototypen durchaus zeitlich nicht immer ganz so gut passen. Das Leben von Hannah Höch wird aus verschiedenen Perspektiven angeschaut und gibt ein Blicke in 
+
+
 Wo genau findet das Ganze statt? Man könnte an historischen Orten auch historische Verläufe und Entscheidungen nach empfinden. Oder den Lebensweg einer interessanten Person. Das könnte in einer Stadt ähnlich wie einem Stadtrundgang aussehen. Es gäbe auch die Möglichkeit einen einfachen Waldweg dazu zu verwenden, dieser kann natürlich auch mit dem Inhalt der Geschichte zu tun haben.
 
 Mit meinem Prototypen soll der physische Weg für die Geschichte nicht so große Bedeutung haben, da der Lebensweg einer Künstlerin erzählt werden soll. 
