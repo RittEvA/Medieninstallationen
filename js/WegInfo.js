@@ -2,12 +2,14 @@ var Medieninstallationen;
 (function (Medieninstallationen) {
     Medieninstallationen.Wanderweg = {
         "Kuenstler": [
-            { K1: 48.047806, K2: 8.186788, audio: "./Audio/anfang.mp3", kontrolle: 0 },
-            { K1: 48.048141, K2: 8.185686, audio: "./Audio/anfang.mp3", kontrolle: 0 },
-            { K1: 48.046929, K2: 8.184645, audio: "./Audio/anfang.mp3", kontrolle: 0 },
-            { K1: 48.046757, K2: 8.184945, audio: "./Audio/anfang.mp3", kontrolle: 0 },
-            { K1: 48.047697, K2: 8.182177, audio: "./Audio/anfang.mp3", kontrolle: 0 },
-            { K1: 48.047575, K2: 8.181909, audio: "./Audio/anfang.mp3", kontrolle: 0 }
+            { K1: 48.0479222, K2: 8.1867135, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.048335, K2: 8.1855334, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0487373, K2: 8.185872, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0481495, K2: 8.1865537, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0484819, K2: 8.1843108, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0484129, K2: 8.1836601, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0464615, K2: 8.1935399, audio: "./Audio/anfang.mp3", kontrolle: 0 },
+            { K1: 48.0464615, K2: 8.1968946, audio: "./Audio/anfang.mp3", kontrolle: 0 },
         ]
     };
 })(Medieninstallationen || (Medieninstallationen = {}));
